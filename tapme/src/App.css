@@ -1,0 +1,38 @@
+.tapme-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.coin-display {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.tap-button {
+  padding: 20px;
+  font-size: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  animation: tap-animation 0.3s ease-in-out;
+}
+
+@keyframes tap-animation {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
